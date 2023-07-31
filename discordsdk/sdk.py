@@ -11,7 +11,7 @@ _is_dsdk_doc_run = hasattr(_sys, "is_dsdk_doc_run") and _sys.is_dsdk_doc_run
 
 def getPath(path):
     try:
-        root = sys._MEIPASS
+        root = _sys._MEIPASS
     except Exception:
         root = os.path.abspath('.')
 
